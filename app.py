@@ -64,6 +64,3 @@ with col_der:
             
     else:
         st.info("Sube una imagen para realizar el diagnóstico y obtener recomendaciones técnicas.")
-
-st.markdown("---")
-st.caption("(c) 2026 AGRODETECT • SOPORTE IHCAFE")
