@@ -17,8 +17,7 @@ col_izq, col_der = st.columns([1.2, 1.8], gap="large")
 # Cargar modelo una sola vez
 @st.cache_resource
 def cargar_modelo():
-    return tf.keras.models.load_model('/content/dataset_cafe/modelo_enfermedades_cafe.keras')
-
+    return tf.keras.models.load_model('modelo_enfermedades_cafe.keras')
 model = cargar_modelo()
 
 with col_izq:
