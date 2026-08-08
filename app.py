@@ -25,8 +25,7 @@ with col_izq:
     uploaded_file = st.file_uploader("", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
     
     if uploaded_file is not None:
-        st.image(uploaded_file, caption='Imagen cargada', use_column_width=True)
-
+        st.image(uploaded_file, caption='Imagen cargada', use_container_width=True)
 with col_der:
     if uploaded_file is not None:
         # Preprocesamiento
