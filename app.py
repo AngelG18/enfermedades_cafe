@@ -53,10 +53,10 @@ with col_der:
         try:
             client = Groq(api_key="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")
             prompt = f"Actúa como un ingeniero agrónomo experto en café. Analiza el diagnóstico: {resultado}. Dame recomendaciones técnicas específicas para el manejo preventivo y control de esta enfermedad en el cultivo de café."
-            
+        
             chat_completion = client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="llama3-8b-8192",
+                model="llama-3.3-70b-versatile",
             )
             st.write(chat_completion.choices[0].message.content)
         except Exception as e:
